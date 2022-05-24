@@ -1,30 +1,30 @@
-# Pokedex - An API that Returns Basic Pokemon Info with a Fun Twist
+# Pokedex - An API that Returns Basic Pokémon Info with a Fun Twist
 
-This a Pokemon API that returns basic Pokemon information. 
-There is an additional endpoint which provides a funny Yoda or Shakespeare version of the description.
+This is a Pokémon API that returns basic Pokémon information. 
+There is an additional endpoint which provides a funny Yoda :grin: or Shakespeare :scroll: version of the description.
 
 ## Description
 
 This fun API project features two endpoints.
-The first endpoint provides basic Pokemon information.
+The first endpoint provides basic Pokémon information.
 
-* HTTP/GET /pokemon/<pokemon name>
+* **HTTP/GET /pokemon/&lt;pokemon name&gt;**
 
-The second endpoint provides a funny translated description depending on the characteristics of the Pokemon requested. 
+The second endpoint provides a funny translated description depending on the characteristics of the Pokémon requested. 
 
-* HTTP/GET /pokemon/translated/<pokemon name>
+* **HTTP/GET /pokemon/translated/&lt;pokemon name&gt;**
 
-If the Pokemon's habitat is 'cave' or it is a legendary Pokemon you'll get a Yoda translated description, but by default this endpoint will return a Shakespeare inspired description.
+If the Pokémon's habitat is **'cave'** or it **is_legendary** Pokemon you'll get a Yoda translated description, but by default this endpoint will return a Shakespeare inspired description.
 
 ### Future Improvements for Production
 
-* Add the ability to request a chosen language translation.
-* Add additional Pokemon information to response.
-* Inject IHttpClient into WebAPIClient class, so that HttpClient could be mocked and covered with unit tests.
-* Return more detailed HTTP response codes based on error scenarios rather than null.
-* Add authentication to funtranslations.com endpoint so that ratelimit could be removed.
-* Add authorisation and authentication.
-* Implement ratelimiting.
+1. Add the ability to request a chosen language translation.
+2. Add additional Pokémon information to response.
+3. Inject IHttpClient into WebAPIClient class, so that HttpClient could be mocked and covered with unit tests.
+4. Return more detailed HTTP response codes based on error scenarios rather than null.
+5. Add authentication to funtranslations.com endpoint so that ratelimit could be removed.
+6. Add authorisation and authentication.
+7. Implement ratelimiting.
 
 ## Getting Started
 
